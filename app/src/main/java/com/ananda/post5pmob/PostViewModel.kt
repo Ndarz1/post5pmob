@@ -43,9 +43,9 @@ class PostViewModel(application: Application) : AndroidViewModel(application) {
 	fun initializeDefaultStories() = viewModelScope.launch {
 		repository.deleteAllStories()
 		val defaultStories = listOf(
-			Story(username = "intan_dwi", avatarResId = R.drawable.avatar_1),
-			Story(username = "minda_04", avatarResId = R.drawable.avatar_2),
-			Story(username = "rubi_community", avatarResId = R.drawable.avatar_3),
+			Story(username = "nafiah", avatarResId = R.drawable.avatar_1),
+			Story(username = "nasya", avatarResId = R.drawable.avatar_2),
+			Story(username = "ruby", avatarResId = R.drawable.avatar_3),
 			Story(username = "rizka", avatarResId = R.drawable.avatar_4),
 			Story(username = "amanda", avatarResId = R.drawable.avatar_5)
 		)
