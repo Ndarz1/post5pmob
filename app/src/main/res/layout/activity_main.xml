@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#000000"
+  tools:context=".MainActivity">
+  
+  <!-- Header dengan Story -->
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvStories"
+    android:layout_width="0dp"
+    android:layout_height="120dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:paddingVertical="12dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+  
+  <!-- Feed Posts -->
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvFeed"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:background="#F5F5F5"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/rvStories" />
+  
+  <!-- Floating Action Button -->
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fabAddPost"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    android:src="@android:drawable/ic_input_add"
+    android:contentDescription="Add Post"
+    app:tint="#FFFFFF"
+    app:backgroundTint="#5A7A9E"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
